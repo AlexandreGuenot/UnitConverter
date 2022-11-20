@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --bodyBackground:#1C1C1C;
+    --topBackground: #6943FF;
+    --inputBorder: #B295FF;
+    --buttonText : #3D3D3D;
+    --unitTitle: #5A537B;
+    --unitMeasures:#353535;
+    --measuresBackground:#cdcbcb;
+}
+body {
+    background-color: var(--bodyBackground);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-container {
+    background-color: var(--measuresBackground);
+    border-radius: 5px;
+}
+.main-container .userFeed{
+    background-color: var(--topBackground);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 25px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.userFeed h2{
+    font-family: 'Inter', sans-serif;
+    font-size: 38px;
+    color: white;
+    margin-bottom: 2rem;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+-webkit-appearance: none;
+    margin: 0;
+}
+.userFeed input{
+    width: 200px;
+    height: 80px;
+    font-weight: 800;
+    font-size: 45px;
+    text-align: center;
+    background: none;
+    outline: none;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    caret-color: var(--inputBorder);
+    border: 1px solid var(--inputBorder);
+}
+.userFeed input:hover,
+.userFeed input:active,
+.userFeed input:focus{
+    border: 4px solid var(--inputBorder);
+}
+.userFeed .convertBtn {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    border: none;
+    cursor: pointer;
+    background: white;
+    color: var(--buttonText);
+    font-size: 24px;
+    padding: 10px 40px;
+    border-radius: 5px;
+}
+.userFeed .convertBtn:hover{
+    opacity: .9;
+    transition: all .6s 
+}
+.measures .card {
+    background-color: white;
+    border-radius: 5px;
+    text-align: center;
+    margin: 15px 10px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+.card h2 {
+    font-family: 'Inter', sans-serif;
+    color: var(--unitTitle);
+    font-size: 32px;
+    font-weight: 600;
+}
+.card p{
+    font-family: 'Inter', sans-serif;
+    margin-top: 15px;
+    font-size: 20px;
+    color: #353535;
+}
+
+.errorIndication {
+    color: rgb(79, 35, 35);
+    font-size: 25px;
+    font-family: 'Inter', sans-serif;
+}
